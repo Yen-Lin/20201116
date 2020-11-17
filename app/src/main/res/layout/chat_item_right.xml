@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_image"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:maxWidth="310dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_right"
+            android:textColor="#FFF"
+            android:text="hello"
+            android:padding="8dp"
+            android:id="@+id/show_message"
+            android:textSize="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/text_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/uptime"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/show_message"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/uptime"
+            android:layout_toLeftOf="@+id/show_message"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dp"
+            android:layout_alignBottom="@id/show_message"
+            android:inputType="time" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

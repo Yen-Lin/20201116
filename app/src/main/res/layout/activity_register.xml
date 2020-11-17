@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context=".Login.Register"
+    android:background="@drawable/nice">
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="密碼"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="480dp"
+        android:layout_centerInParent="true" />
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="確認密碼"
+        android:inputType="textPhonetic"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="430dp"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="676dp"
+        android:text="Pai Pai App"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="59dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="16dp"
+        android:text="註冊帳號"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="640dp"
+        android:layout_centerInParent="true" />
+
+
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="530dp"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="註冊"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="330dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/createText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已有帳號"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="110dp"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

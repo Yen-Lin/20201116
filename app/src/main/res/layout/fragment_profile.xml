@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.profile.ProfileFragment">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:background="@color/colorAccent">
+
+
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp">
+
+                <ImageView
+                    android:id="@+id/avatarIv"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/fui_idp_button_background_facebook"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_default_img_white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C8C3C3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/EmailTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/fui_bgGoogle"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/nameTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/fui_bgGoogle"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/ageTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/fui_bgGoogle"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="220dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/genderTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/fui_bgGitHub"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/birthdayTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/fui_bgGitHub"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/constellationTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/fui_bgGitHub"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/positionTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/fui_bgGitHub"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/mailboxTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="159dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/fui_bgGitHub"
+                        android:textSize="30sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_posts"
+                android:layout_below="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_edit_white" />
+    />
+</RelativeLayout>

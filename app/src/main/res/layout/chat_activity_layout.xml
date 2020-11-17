@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chat.ChatActivity">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:id="@+id/linearlayout_actionbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:id="@+id/textview_name"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_marginLeft="16dp"
+            android:text="Peter"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/replylinear"
+        android:layout_below="@+id/linearlayout_actionbar"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:paddingTop="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/replylinear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/send_message_layout"
+        android:dividerPadding="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+
+        <Button
+            android:id="@+id/btn01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/send_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffdddddd"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginLeft="8dp"
+            android:id="@+id/et_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/btn_send"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_send_black"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Login.MainActivity"
+    android:background="@drawable/nice">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交友軟體拍拍"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="640dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/heart" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_btn"
+        android:backgroundTint="@color/colorAccent"
+        android:text="註冊"
+        android:textColor="@color/fui_bgGoogle" />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="登入"
+        android:textColor="@color/fui_bgGoogle" />
+
+
+
+
+</RelativeLayout>
